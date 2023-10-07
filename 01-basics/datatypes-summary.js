@@ -30,3 +30,38 @@ const myFunction = function(){
 }
 
 myFunction()
+
+
+
+
+
+
+
+
+
+// ****************************************************************
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myWebsite = "anzardotcom"
+
+let anotherName = myWebsite
+anotherName = "anzarahmaddotcom"
+
+
+console.log(anotherName)
+console.log(myWebsite)   // original value does not get changed as we get the copy
+
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+userTwo.email = "newemail@gmail.com"
+
+console.log(userOne)
+console.log(userTwo)  
+// original values are also changed as we get the reference
+
